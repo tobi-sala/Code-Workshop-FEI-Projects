@@ -1,0 +1,43 @@
+/*
+flex-direction( column column-reverse)
+*/
+
+.container{
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+	/*flex-wrap: wrap;*/
+	justify-content: space-between;
+	align-item: center;
+}
+.container div{
+	width: 250px
+}
+.cont1{
+	background-color: blue;
+	order:4;
+	flex-grow:2;
+	align-self:center;
+}
+.cont2{
+	background-color: red;
+	order:8;
+	flex-grow:6;
+	align-self:baseline;
+}
+.cont3{
+	background-color: green;
+	order:2;
+	flex-grow:5;
+	align-self: stretch; 
+}
+.cont4{
+	background-color: yellow;
+	order:5;
+	flex-grow:3;
+	align-self: flex-start;
+}
+.nav{
+	justify-content: space-around;
+	display:flex;
+}
